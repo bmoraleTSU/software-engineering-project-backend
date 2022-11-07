@@ -18,7 +18,7 @@ mySQLVariables.env
 .env.development.local
 .env.test.local
 .env.production.local
-
+djangoBackendApp
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
