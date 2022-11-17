@@ -1,4 +1,4 @@
-"""djangoBackendApp URL Configuration
+"""sweClassProjectBackend URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from rest_framework import routers
+from backendAPI import views
+
+router = routers.DefaultRouter()
+router.register(r'clients', views.AbcClientViewSet)
+#Do same for other tables
 
 urlpatterns = [
-    path('viewData/', include('viewData.urls')),
+    path('', include(router.urls)),
     path('admin/', admin.site.urls),
 ]

@@ -1,0 +1,11 @@
+#Django Web Framework
+django
+
+#Django Cors Headers - Used to enable CORS headers in API responses, and allow requests to be made to your API server from other origins.
+django-cors-headers
+
+#Django REST Framework - Used to design API logic
+djangorestframework
+
+#MySQL Client - Used as an interface to connect Django application to the MySQL server.
+mysqlclient
