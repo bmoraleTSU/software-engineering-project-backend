@@ -8,7 +8,4 @@ urlpatterns = [
   path('clients/<int:id>/', views.AbcClientViewSet.as_view({'get': 'list'})),
 ]
 
-# abc_client_list = AbcClientViewSet.as_view({
-#     'get': 'list',
-#     #'post': 'create'
-# })
+#Add other URLs for APIS here

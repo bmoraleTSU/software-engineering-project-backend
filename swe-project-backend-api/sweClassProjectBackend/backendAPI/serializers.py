@@ -15,4 +15,5 @@ class AbcClientSerializer(serializers.ModelSerializer):
                    'modified_date',
                    'is_deleted',
                 ]
+                
 #Do same for other tables

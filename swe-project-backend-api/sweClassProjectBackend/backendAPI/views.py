@@ -42,5 +42,7 @@ class AbcClientViewSet(viewsets.ModelViewSet, APIView):
     Not needed:
     permission_classes = [permissions.IsAuthenticated]
     '''
-#Do same for other tables
+    #Add POST API endpoint here (Ayaba)
+
+#Do same as above for other tables
     
