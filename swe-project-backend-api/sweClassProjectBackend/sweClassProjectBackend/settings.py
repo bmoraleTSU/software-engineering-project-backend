@@ -38,6 +38,12 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
+#CORS Header solution to GET issues over localhost
+CORS_ORIGIN_WHITELIST = [
+    'https://localhost:3000'
+]
+CORS_ORIGIN_ALLOW_ALL = True
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -60,6 +66,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'sweClassProjectBackend.urls'
@@ -81,10 +88,10 @@ TEMPLATES = [
 ]
 
 #Pagination for the MySQL Database Table information displayed at endpoint
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+#     'PAGE_SIZE': 10
+# }
 
 WSGI_APPLICATION = 'sweClassProjectBackend.wsgi.application'
 
