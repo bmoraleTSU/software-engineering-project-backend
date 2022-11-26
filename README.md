@@ -10,6 +10,6 @@ This is the backend code written in Django for the ABC Management Inc. client ma
     > SQL_USERNAME={`Your username to your mySQL instance`}
     >
     > SECRET_KEY={**CONTACT ME FOR THE KEY** ***via text or email***}
-5. Now navigate to the `software-engineering-project/swe-project-backend-api/sweClassProjectBackend` and run the following command:
+5. Now navigate to the `software-engineering-project/swe-project-backend-api/sweClassProjectBackend` folder and run the following command:
     > python3 manage.py runserver
 6. You may have to migrate the changes from the Django project to your mySQL instance but the command line will tell you the commands to do so.
