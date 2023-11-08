@@ -12,6 +12,7 @@
 /build
 
 # misc
+*.pyc
 .env
 mySQLVariables.env
 .DS_Store
